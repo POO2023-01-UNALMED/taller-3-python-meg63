@@ -1,7 +1,6 @@
 class Control:
     _tv='';
    
-        
     def getTv(self):
         return self._tv;
     def setTv(self,tv):
