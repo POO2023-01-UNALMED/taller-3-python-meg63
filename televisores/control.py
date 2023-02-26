@@ -1,13 +1,14 @@
 class Control:
     _tv='';
-    def enlazar(self,televisor):
-        self._tv=televisor
-        self._tv._control=self
+   
         
     def getTv(self):
         return self._tv;
     def setTv(self,tv):
         self._tv=tv
+    def enlazar(self,televisor):
+        self.setTv(televisor)
+        self._tv.setControl(self)
     def turnOn(self):
         self._tv.turnOn()
     def turnOff(self):
